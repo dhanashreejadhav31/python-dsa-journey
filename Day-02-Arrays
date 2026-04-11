@@ -1,0 +1,59 @@
+# 1 -- Traversing array
+
+arr = [1, 2, 3, 4, 5]
+for element in arr:
+    print(element, end=" ")
+
+# Reverse array
+print("Reversed array", arr[::-1])    
+
+#2 -- Finding Max element in array
+max_element = arr[0]
+for i in range(len(arr)):
+    if arr[i] > max_element:
+        max_element = arr[i]
+print("Max element: ",max_element)         
+
+#3 --Linear Search
+def linear_search(ary,target):
+    for i in range(len(ary)):
+        if ary[i] == target:
+            return i
+    return -1
+ary = [4,5,7,9,10]
+target = 9
+if linear_search(ary,target) != -1:
+    print("Element found at index: ", linear_search(ary,target))
+else:
+    print("Element not found")
+
+#4 -- Second Largest Element
+def second_largest(arr):
+    if len(arr) <2 :
+        return None
+    first = second = float('-inf')
+    for num in arr:
+        if num > first:
+            second = first
+            first = num
+        elif num>second and num != first:
+            second = num
+    return None if second == float('-inf') else second      
+arr = [10, 5, 8, 12, 3]
+result = second_largest(arr)
+if result is not None:
+    print("Second largest element: ", result)
+else:
+    print("No second largest element found.")    
+
+#5 -- check if array is sorted
+def sorted_array(arr):
+    for i in range(len(arr) - 1):
+        if arr[i] > arr[i+1]:
+            return False
+    return True 
+arr = [4,5,6,2,7,8]   
+if sorted_array(arr) == True:
+    print("Array is sorted")
+else:  
+    print("Array is not sorted")
