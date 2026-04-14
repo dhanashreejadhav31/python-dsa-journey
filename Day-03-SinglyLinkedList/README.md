@@ -1,4 +1,4 @@
-# 📌 Day 3: Singly Linked List (DSA)
+# 📌 Day 4: Singly Linked List (DSA)
 
 ## 🔍 Introduction
 A **Singly Linked List** is a linear data structure where each element (node) contains:
