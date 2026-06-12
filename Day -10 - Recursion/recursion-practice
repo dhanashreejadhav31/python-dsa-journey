@@ -1,0 +1,24 @@
+def factorial(n):
+    if n==0 or n==1:
+        return 1
+    return n*factorial(n-1)
+
+print(factorial(5))
+
+
+def fibo(n):
+    if n == 1 or n== 2:
+        return 1
+    return fibo(n-1) + fibo(n-2)
+
+print(fibo(6))
+
+
+def palindrome(str):
+    if len(str) <= 1:
+        return True
+    if str[0] != str[-1]:
+        return False
+    return palindrome(str[1:-1])
+
+print(palindrome("121"))
