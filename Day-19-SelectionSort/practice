@@ -1,0 +1,12 @@
+def SelectionSort(a):
+    n = len(a)
+    for i in range(n):
+        min = i
+        for j in range(i,n):
+            if(a[j]<a[min]):
+                min = j
+        a[i],a[min] = a[min],a[i]
+
+a = [24,56,10,38,40,7,90]
+SelectionSort(a)
+print("After selection sort:",a)
