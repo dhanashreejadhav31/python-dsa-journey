@@ -83,6 +83,3 @@ O(1)
 
 Insertion Sort is a simple and intuitive sorting algorithm that is useful for small or nearly sorted datasets. Understanding it helps build a strong foundation for learning more advanced sorting algorithms.
 
-### Hashtags
-
-#Python #DSA #InsertionSort #Algorithms #Programming #CodingJourney #100DaysOfCode
