@@ -41,7 +41,3 @@ It consists of three main steps:
 | Time Complexity | **O(n)** |
 | Space Complexity | **O(log n)** |
 
----
-### Day 22 ✅
-**Topic:** Divide and Conquer  
-**Language:** Python 🐍
