@@ -1,0 +1,22 @@
+def fractional_knapsack(price,item_wt,capacity):
+    n = len(item_wt)
+    items = [(price[i],item_wt[i],price[i]/item_wt[i]) for i in range(n)]
+
+    items.sort(key = lambda x:x[2],reverse = True)
+        
+
+    profit = 0.0
+
+    for price,item_wt,perKGprice in items:
+        if(capacity>=item_wt):
+            capacity = capacity -item_wt
+            profit = profit + price
+        else:
+            profit = profit + capacity*perKGprice
+
+    print("Total profit: ",profit)
+
+price = [24,21,12,10]
+item_wt = [7,3,4,5]
+capacity = 20 
+fractional_knapsack(price,item_wt,capacity)
